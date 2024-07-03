@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup {
+  display: flex;
+  background-color: white;
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+    max-width: 27.5rem;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      background: url("/assets/images/icon-list.svg") no-repeat 0 0.25rem;
+      padding-left: 2rem;
+      line-height: 2;
+    }
+  }
+
+  .error {
+    border-color: $tomato;
+    outline-color: $tomato;
+    background-color: #FFE8E4;
+    color: $tomato;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $tomato;
+      -webkit-box-shadow: 0 0 0px 40rem #FFE8E4 inset;
+    }
+  }
+
+  .error-message {
+    color: $tomato;
+    display: none;
+    text-align: right
+  }
+}

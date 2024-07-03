@@ -1,0 +1,82 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: $font-m;
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-weight-s;
+  color: black;
+  line-height: 1.5;
+
+  h1 {
+    line-height: 1;
+    font-weight: $font-weight-m;
+    margin: 0;
+  }
+
+  b {
+    font-weight: $font-weight-m;
+  }
+
+  button {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: $dark-slate-grey;
+    color: white;
+    font-size: $font-m;
+
+    &:hover{
+      background-image: linear-gradient(to right, $pink, $tomato);
+      cursor: pointer;
+    }
+  }
+
+  form {
+    .input_field {
+      padding: 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid $grey;
+        cursor: pointer;
+      }
+    }
+
+    .input_labels {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0.5rem;
+      font-size: $font-s;
+      font-weight: $font-weight-m;
+    }
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+
+    a {
+      color: $tomato;
+    }
+  }
+}

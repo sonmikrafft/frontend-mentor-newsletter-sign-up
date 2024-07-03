@@ -1,0 +1,24 @@
+.confirmation {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 2.5rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+  }
+
+  &__button {
+  }
+}
